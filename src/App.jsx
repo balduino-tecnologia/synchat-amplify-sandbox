@@ -48,7 +48,7 @@ export default function App() {
     <Authenticator>
         {({ signOut, user }) => (
           <main>
-            <h2>Hello {user?.username} - {COGNITO_USER_POOL_ID}</h2>
+            <h2>Hello: {user?.username} - {COGNITO_USER_POOL_ID}</h2>
             <button onClick={signOut}>Sign out</button>
           </main>
         )}
